@@ -24,7 +24,7 @@ dnf install mesa-dri-drivers mesa-vulkan-drivers mesa-libGL -y
 groupadd video
 usermod -aG video user
 
-# install firefox (fonts and font configuration missing)
+# install firefox (fonts and font configuration missing, also no codecs installed at the time)
 dnf install firefox -y
 
 echo "Done!"
