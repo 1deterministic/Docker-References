@@ -1,7 +1,6 @@
-FROM fedora:latest
+FROM fedora:32
 
-COPY installer.sh /opt/installer.sh
-COPY client.conf /etc/pulse/client.conf
+COPY opt /opt
 
 RUN chmod +x /opt/installer.sh && bash /opt/installer.sh
 
